@@ -1,0 +1,69 @@
+<section
+  class="container mx-auto px-4 md:px-0 text-center mt-[72px] mb-[64px] border-b border-black/10"
+>
+  <h2 class="uppercase font-integral text-[48px] sm:text-[32px] mb-[55px]">
+    New Arrivals
+  </h2>
+
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="flex flex-col items-start">
+          <picture>
+            <source
+              srcset="
+                /src/assets/images/frame1.webp    1x,
+                /src/assets/images/frame1@2x.webp 2x,
+                /src/assets/images/frame1@3x.webp 3x
+              "
+              type="image/webp"
+            />
+            <source
+              srcset="
+                /src/assets/images/frame1.png    1x,
+                /src/assets/images/frame1@2x.png 2x,
+                /src/assets/images/frame1@3x.png 3x
+              "
+              type="image/png"
+            />
+            <img src="/src/assets/images/frame1.webp" alt="frame1" class="w-[295px] h-[298px]" />
+          </picture>
+          <h3>T-SHIRT WITH TAPE DETAILS</h3>
+          <div class=" gap-[13px]  flex-row  flex">
+            <div class=" gap-[5px] flex-row  flex items-center justify-center">
+              <svg class="w-[18px] h-[18px]">
+                <use href="/src/assets/images/symbol-defs.svg#icon-star4"></use>
+              </svg>
+              <svg class="w-[18px] h-[18px]">
+                <use href="/src/assets/images/symbol-defs.svg#icon-star4"></use>
+              </svg>
+              <svg class="w-[18px] h-[18px]">
+                <use href="/src/assets/images/symbol-defs.svg#icon-star4"></use>
+              </svg>
+              <svg class="w-[18px] h-[18px]">
+                <use href="/src/assets/images/symbol-defs.svg#icon-star4"></use>
+              </svg>
+              <svg class="w-[9px] h-[18px]">
+                <use href="/src/assets/images/symbol-defs.svg#icon-star5"></use>
+              </svg>
+            </div>
+
+            <p>4.5/<span class="text-black/60">5</span></p>
+          </div>
+          <p>$120</p>
+        </div>
+      </div>
+
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+      <div class="swiper-slide">Slide 4</div>
+      <div class="swiper-slide">Slide 5</div>
+      <div class="swiper-slide">Slide 6</div>
+      <div class="swiper-slide">Slide 7</div>
+      <div class="swiper-slide">Slide 8</div>
+      <div class="swiper-slide">Slide 9</div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</section>

@@ -1,4 +1,6 @@
 @import 'tailwindcss';
+@import 'swiper/css';
+@import 'swiper/css/navigation';
 
 @theme {
   --font-satoshi: 'Satoshi', sans-serif;
@@ -38,4 +40,16 @@
   font-weight: 700;
   font-style: normal;
   font-display: swap;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  pointer-events: auto;
+  z-index: 10;
+  color: #000000;
 }
