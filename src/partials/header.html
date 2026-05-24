@@ -1,103 +1,105 @@
-<section class="container mx-auto">
-  <nav
-    class="relative bg-white border-b border-[color:var(--color-input)] px-4 py-4 md:px-0 font-[family:var(--font-satoshi)]"
-  >
-    <div class="mx-auto flex items-center justify-between gap-4">
-      <div class="flex items-center gap-4">
-        <button
-          id="menu-btn"
-          class="md:hidden text-black cursor-pointer z-50 select-none"
-          aria-label="Toggle menu"
-        >
-          <svg class="w-6 h-6 stroke-current">
-            <use href="/src/assets/images/symbol-defs.svg#icon-burger"></use>
-          </svg>
-        </button>
-
-        <a
-          href="#"
-          class="font-[family:var(--font-integral)] text-2xl font-black tracking-tight text-black select-none"
-          >SHOP.CO</a
-        >
-      </div>
-
-      <div
-        id="mobile-menu"
-        class="hidden absolute top-full left-0 w-full bg-white border-b border-[color:var(--color-input)] p-6 flex-col gap-4 shadow-lg z-40 md:relative md:top-auto md:left-auto md:w-auto md:p-0 md:shadow-none md:border-none md:flex md:flex-row md:items-center md:gap-6 whitespace-nowrap"
-      >
-        <a
-          href="#"
-          class="flex items-center gap-1.5 font-regular text-black hover:text-[color:var(--color-bg)] transition py-2 md:py-0"
-        >
-          Shop
-          <svg class="w-3.5 h-2 fill-current">
-            <use href="/src/assets/images/symbol-defs.svg#icon-v"></use>
-          </svg>
-        </a>
-        <a
-          href="#"
-          class="font-regular text-black hover:text-[color:var(--color-sale)] transition py-2 md:py-0"
-          >On Sale</a
-        >
-        <a
-          href="#"
-          class="font-regular text-black hover:text-[color:var(--color-bg)] transition py-2 md:py-0"
-          >New Arrivals</a
-        >
-        <a
-          href="#"
-          class="font-regular text-black hover:text-[color:var(--color-bg)] transition py-2 md:py-0"
-          >Brands</a
-        >
-      </div>
-
-      <div class="hidden md:flex flex-1 max-w-[600px] mx-4">
-        <div class="relative w-full">
-          <span
-            class="absolute inset-y-0 left-0 flex items-center pl-4 text-[color:var(--color-bg)] pointer-events-none"
+<section>
+  <div class="max-w-[1240px] mx-auto container">
+    <nav
+      class="relative bg-white border-b border-[color:var(--color-input)] px-4 py-4 md:px-0 font-[family:var(--font-satoshi)]"
+    >
+      <div class="mx-auto flex items-center justify-between gap-4">
+        <div class="flex items-center gap-4">
+          <button
+            id="menu-btn"
+            class="md:hidden text-black cursor-pointer z-50 select-none"
+            aria-label="Toggle menu"
           >
-            <svg class="w-5 h-5 fill-current">
+            <svg class="w-6 h-6 stroke-current">
+              <use href="/src/assets/images/symbol-defs.svg#icon-burger"></use>
+            </svg>
+          </button>
+
+          <a
+            href="#"
+            class="font-integral text-2xl font-black tracking-tight text-black select-none"
+            >SHOP.CO</a
+          >
+        </div>
+
+        <div
+          id="mobile-menu"
+          class="hidden absolute top-full left-0 w-full bg-white border-b border-[color:var(--color-input)] p-6 flex-col gap-4 shadow-lg z-40 md:relative md:top-auto md:left-auto md:w-auto md:p-0 md:shadow-none md:border-none md:flex md:flex-row md:items-center md:gap-6 whitespace-nowrap"
+        >
+          <a
+            href="#"
+            class="flex items-center gap-1.5 font-regular text-black hover:text-[color:var(--color-bg)] transition py-2 md:py-0"
+          >
+            Shop
+            <svg class="w-3.5 h-2 fill-current">
+              <use href="/src/assets/images/symbol-defs.svg#icon-v"></use>
+            </svg>
+          </a>
+          <a
+            href="#"
+            class="font-regular text-black hover:text-[color:var(--color-sale)] transition py-2 md:py-0"
+            >On Sale</a
+          >
+          <a
+            href="#"
+            class="font-regular text-black hover:text-[color:var(--color-bg)] transition py-2 md:py-0"
+            >New Arrivals</a
+          >
+          <a
+            href="#"
+            class="font-regular text-black hover:text-[color:var(--color-bg)] transition py-2 md:py-0"
+            >Brands</a
+          >
+        </div>
+
+        <div class="hidden md:flex flex-1 max-w-[600px] mx-4">
+          <div class="relative w-full">
+            <span
+              class="absolute inset-y-0 left-0 flex items-center pl-4 text-[color:var(--color-bg)] pointer-events-none"
+            >
+              <svg class="w-5 h-5 fill-current">
+                <use href="/src/assets/images/symbol-defs.svg#icon-lypa"></use>
+              </svg>
+            </span>
+            <input
+              type="search"
+              placeholder="Search for products..."
+              class="w-full bg-input text-black pl-12 pr-4 py-3 rounded-full outline-none border border-transparent focus:border-bg transition"
+            />
+          </div>
+        </div>
+
+        <div class="flex items-center gap-4 text-black">
+          <button
+            class="md:hidden hover:text-[color:var(--color-bg)] transition"
+            aria-label="Search"
+          >
+            <svg class="w-6 h-6 fill-current">
               <use href="/src/assets/images/symbol-defs.svg#icon-lypa"></use>
             </svg>
-          </span>
-          <input
-            type="search"
-            placeholder="Search for products..."
-            class="w-full bg-[color:var(--color-input)] text-black pl-12 pr-4 py-3 rounded-full outline-none border border-transparent focus:border-[color:var(--color-bg)] transition"
-          />
+          </button>
+
+          <a href="#" class="hover:text-bg transition" aria-label="Cart">
+            <svg class="w-6 h-6 fill-current">
+              <use
+                href="/src/assets/images/symbol-defs.svg#icon-vector-2"
+              ></use>
+            </svg>
+          </a>
+
+          <a
+            href="#"
+            class="hover:text-[color:var(--color-bg)] transition"
+            aria-label="Account"
+          >
+            <svg class="w-6 h-6 fill-current">
+              <use
+                href="/src/assets/images/symbol-defs.svg#icon-vector-1"
+              ></use>
+            </svg>
+          </a>
         </div>
       </div>
-
-      <div class="flex items-center gap-4 text-black">
-        <button
-          class="md:hidden hover:text-[color:var(--color-bg)] transition"
-          aria-label="Search"
-        >
-          <svg class="w-6 h-6 fill-current">
-            <use href="/src/assets/images/symbol-defs.svg#icon-lypa"></use>
-          </svg>
-        </button>
-
-        <a
-          href="#"
-          class="hover:text-[color:var(--color-bg)] transition"
-          aria-label="Cart"
-        >
-          <svg class="w-6 h-6 fill-current">
-            <use href="/src/assets/images/symbol-defs.svg#icon-vector-2"></use>
-          </svg>
-        </a>
-
-        <a
-          href="#"
-          class="hover:text-[color:var(--color-bg)] transition"
-          aria-label="Account"
-        >
-          <svg class="w-6 h-6 fill-current">
-            <use href="/src/assets/images/symbol-defs.svg#icon-vector-1"></use>
-          </svg>
-        </a>
-      </div>
-    </div>
-  </nav>
+    </nav>
+  </div>
 </section>
