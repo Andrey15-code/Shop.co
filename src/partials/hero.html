@@ -1,44 +1,74 @@
 <section
-  class="flex items-center justify-between gap-10 bg-[#F2F0F1] container mx-auto pt-25.75 max-lg:flex-col max-md:px-4"
+  class="  bg-[#F2F0F1]  pt-25.75 "
 >
-  <div class="flex flex-col justify-items-center">
-    <h1 class="font-integral font-bold text-[64px] max-md:text-[36px]/[34px] text-black max-lg:text-[40px]/[34px]">
-      FIND CLOTHES THAT MATCHES YOUR STYLE
-    </h1>
-    <p class="font-satoshi font-normal text-[16px]/[22px] text-black/60 mt-8 max-md:text-[14px]">
-      Browse through our diverse range of meticulously crafted garments,
-      designed to bring out your individuality and cater to your sense of style.
-    </p>
-    <button class="bg-black text-white font-satoshi font-medium text-[16px] py-3.75 px-[67.5px] rounded-full hover:bg-white hover:text-black transition-colors duration-300 cursor-pointer mt-8 mb-12">
-      Shop Now
-    </button>
-    <div class="flex items-center gap-8 mb-29 flex-wrap max-md:justify-center">
-      <div class="border-r border-black/10 pr-8">
-        <h2 class="font-satoshi font-bold text-[40px] max-md:text-[24px]">200+</h2>
-        <p class="font-satoshi font-normal text-[16px]/[22px] text-black/60 max-md:text-[12px]">International Brands</p>
-      </div>
-      <div class="border-r border-black/10 pr-8 max-md:border-none">
-        <h2 class="font-satoshi font-bold text-[40px] max-md:text-[24px]">2,000+</h2>
-        <p class="font-satoshi font-normal text-[16px]/[22px] text-black/60 max-md:text-[12px]">High-Quality Products</p>
-      </div>
-      <div>
-        <h2 class="font-satoshi font-bold text-[40px] max-md:text-[24px]">30,000+</h2>
-        <p class="font-satoshi font-normal text-[16px]/[22px] text-black/60 max-md:text-[12px]">Happy Customers</p>
+  <div class="max-lg:flex-col max-lg:px-4 container mx-auto flex items-center justify-between gap-10 max-w-[1240px] ">
+    <div class="flex flex-col justify-items-center">
+      <h1
+        class="font-integral font-bold text-[64px] max-xl:text-[30px] max-md:text-[36px]/[34px] text-black max-lg:text-[40px]/[34px]"
+      >
+        FIND CLOTHES THAT MATCHES YOUR STYLE
+      </h1>
+      <p
+        class="font-satoshi font-normal text-[16px]/[22px] text-black/60 mt-8 max-md:text-[14px]"
+      >
+        Browse through our diverse range of meticulously crafted garments,
+        designed to bring out your individuality and cater to your sense of style.
+      </p>
+      <button
+        class="bg-black text-white font-satoshi font-medium text-[16px] py-3.75 px-[67.5px] rounded-full hover:bg-white hover:text-black transition-colors duration-300 cursor-pointer mt-8 mb-12 w-52.5 max-lg:w-full"
+      >
+        Shop Now
+      </button>
+      <div class="flex items-center gap-8 mb-24 flex-wrap max-lg:justify-center ">
+        <div class="border-r border-black/10 pr-8 max-md:pr-[27.5px]">
+          <h2 class="font-satoshi font-bold text-[40px] max-md:text-[24px]">
+            200+
+          </h2>
+          <p
+            class="font-satoshi font-normal text-[16px]/[22px] text-black/60 max-md:text-[12px]"
+          >
+            International Brands
+          </p>
+        </div>
+        <div class="border-r border-black/10 pr-8 max-md:pr-[27.5px] max-sm:border-none">
+          <h2 class="font-satoshi font-bold text-[40px] max-md:text-[24px]">
+            2,000+
+          </h2>
+          <p
+            class="font-satoshi font-normal text-[16px]/[22px] text-black/60 max-md:text-[12px]"
+          >
+            High-Quality Products
+          </p>
+        </div>
+        <div>
+          <h2 class="font-satoshi font-bold text-[40px] max-md:text-[24px]">
+            30,000+
+          </h2>
+          <p
+            class="font-satoshi font-normal text-[16px]/[22px] text-black/60 max-md:text-[12px]"
+          >
+            Happy Customers
+          </p>
+        </div>
       </div>
     </div>
+    <picture>
+      <source
+        srcset="
+          /src/assets/images/hero.webp   1x,
+          /src/assets/images/hero2x.webp 2x
+        "
+        type="image/webp"
+      />
+      <source
+        srcset="/src/assets/images/hero.png 1x, /src/assets/images/hero2x.png 2x"
+        type="image/png"
+      />
+      <img
+        src="/src/assets/images/hero.webp"
+        alt="Hero Image"
+        class="object-cover w-367"
+      />
+    </picture>
   </div>
-  <picture>
-    <source
-      srcset="
-        /src/assets/images/hero.webp   1x,
-        /src/assets/images/hero2x.webp 2x
-      "
-      type="image/webp"
-    />
-    <source
-      srcset="/src/assets/images/hero.png 1x, /src/assets/images/hero2x.png 2x"
-      type="image/png"
-    />
-    <img src="/src/assets/images/hero.webp" alt="Hero Image" class="object-cover w-367" />
-  </picture>
 </section>
