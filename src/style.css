@@ -21,6 +21,18 @@
   --animate-card-hover: cardLift 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+}
+
 @font-face {
   font-family: 'Satoshi';
   src: url('./assets/fonts/Satoshi-Bold.woff2') format('woff2');
