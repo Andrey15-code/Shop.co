@@ -1,9 +1,6 @@
-import './swiper.js';
+import { initMenu } from './menu.js';
+import { initSliders } from './swiper.js';
 
-const menuBtn = document.getElementById('menu-btn');
-const mobileMenu = document.getElementById('mobile-menu');
+initMenu();
+initSliders();
 
-menuBtn.addEventListener('click', () => {
-  mobileMenu.classList.toggle('hidden');
-  mobileMenu.classList.toggle('flex');
-});

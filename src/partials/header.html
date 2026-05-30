@@ -1,13 +1,13 @@
 <section>
-  <div class="max-w-[1240px] mx-auto container">
+  <div class="container mx-auto max-w-310">
     <nav
-      class="relative bg-white border-b border-[color:var(--color-input)] px-4 py-4 md:px-0 font-[family:var(--font-satoshi)]"
+      class="relative px-4 py-4 bg-white border-b border-input md:px-0 font-satoshi"
     >
-      <div class="mx-auto flex items-center justify-between gap-4">
+      <div class="flex items-center justify-between gap-4 mx-auto">
         <div class="flex items-center gap-4">
           <button
             id="menu-btn"
-            class="md:hidden text-black cursor-pointer z-50 select-none"
+            class="z-50 text-black cursor-pointer select-none md:hidden"
             aria-label="Toggle menu"
           >
             <svg class="w-6 h-6 stroke-current">
@@ -17,45 +17,45 @@
 
           <a
             href="#"
-            class="font-integral text-2xl font-black tracking-tight text-black select-none"
+            class="text-2xl font-black tracking-tight text-black select-none font-integral"
             >SHOP.CO</a
           >
         </div>
 
         <div
           id="mobile-menu"
-          class="hidden absolute top-full left-0 w-full bg-white border-b border-[color:var(--color-input)] p-6 flex-col gap-4 shadow-lg z-40 md:relative md:top-auto md:left-auto md:w-auto md:p-0 md:shadow-none md:border-none md:flex md:flex-row md:items-center md:gap-6 whitespace-nowrap"
+          class="absolute left-0 z-40 flex-col hidden w-full gap-4 p-6 bg-white border-b shadow-lg top-full border-input md:relative md:top-auto md:left-auto md:w-auto md:p-0 md:shadow-none md:border-none md:flex md:flex-row md:items-center md:gap-6 whitespace-nowrap"
         >
           <a
             href="#"
-            class="flex items-center gap-1.5 font-regular text-black hover:text-[color:var(--color-bg)] transition py-2 md:py-0"
+            class="flex items-center py-2 text-black transition gap-1.5 font-regular hover:text-bg md:py-0"
           >
             Shop
-            <svg class="w-3.5 h-2 fill-current">
+            <svg class="h-2 fill-current w-3.5">
               <use href="/src/assets/images/symbol-defs.svg#icon-v"></use>
             </svg>
           </a>
           <a
             href="#"
-            class="font-regular text-black hover:text-[color:var(--color-sale)] transition py-2 md:py-0"
+            class="py-2 text-black transition font-regular hover:text-sale md:py-0"
             >On Sale</a
           >
           <a
             href="#"
-            class="font-regular text-black hover:text-[color:var(--color-bg)] transition py-2 md:py-0"
+            class="py-2 text-black transition font-regular hover:text-bg md:py-0"
             >New Arrivals</a
           >
           <a
             href="#"
-            class="font-regular text-black hover:text-[color:var(--color-bg)] transition py-2 md:py-0"
+            class="py-2 text-black transition font-regular hover:text-bg md:py-0"
             >Brands</a
           >
         </div>
 
-        <div class="hidden md:flex flex-1 max-w-[600px] mx-4">
+        <div class="flex-1 hidden mx-4 md:flex max-w-150">
           <div class="relative w-full">
             <span
-              class="absolute inset-y-0 left-0 flex items-center pl-4 text-[color:var(--color-bg)] pointer-events-none"
+              class="absolute inset-y-0 left-0 flex items-center pl-4 pointer-events-none text-bg"
             >
               <svg class="w-5 h-5 fill-current">
                 <use href="/src/assets/images/symbol-defs.svg#icon-lypa"></use>
@@ -64,14 +64,14 @@
             <input
               type="search"
               placeholder="Search for products..."
-              class="w-full bg-input text-black pl-12 pr-4 py-3 rounded-full outline-none border border-transparent focus:border-bg transition"
+              class="w-full py-3 pl-12 pr-4 text-black transition border border-transparent rounded-full outline-none bg-input focus:border-bg"
             />
           </div>
         </div>
 
         <div class="flex items-center gap-4 text-black">
           <button
-            class="md:hidden hover:text-[color:var(--color-bg)] transition"
+            class="transition md:hidden hover:text-bg"
             aria-label="Search"
           >
             <svg class="w-6 h-6 fill-current">
@@ -79,7 +79,7 @@
             </svg>
           </button>
 
-          <a href="#" class="hover:text-bg transition" aria-label="Cart">
+          <a href="#" class="transition hover:text-bg" aria-label="Cart">
             <svg class="w-6 h-6 fill-current">
               <use
                 href="/src/assets/images/symbol-defs.svg#icon-vector-2"
@@ -87,11 +87,7 @@
             </svg>
           </a>
 
-          <a
-            href="#"
-            class="hover:text-[color:var(--color-bg)] transition"
-            aria-label="Account"
-          >
+          <a href="#" class="transition hover:text-bg" aria-label="Account">
             <svg class="w-6 h-6 fill-current">
               <use
                 href="/src/assets/images/symbol-defs.svg#icon-vector-1"
