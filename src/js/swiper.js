@@ -41,4 +41,28 @@ export function initSliders() {
       1024: { slidesPerView: 4, spaceBetween: 20 },
     },
   });
+
+  var reviewsSwiper = new Swiper('.reviews-swiper', {
+    modules: [Navigation, Keyboard],
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true,
+    keyboard: {
+      enabled: true,
+    },
+    navigation: {
+      nextEl: '#review-next',
+      prevEl: '#review-prev',
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+    },
+  });
 }
