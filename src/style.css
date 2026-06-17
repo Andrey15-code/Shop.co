@@ -2,6 +2,24 @@
 @import 'swiper/css';
 @import 'swiper/css/navigation';
 
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes cardLift {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-8px);
+  }
+}
+
 @theme {
   --font-satoshi: 'Satoshi', sans-serif;
   --font-integral: 'IntegralCF', sans-serif;
@@ -9,27 +27,18 @@
   --color-input: #f0f0f0;
   --color-sale: #ff3333;
 
-  @keyframes cardLift {
-    0% {
-      transform: translateY(0);
-    }
-    100% {
-      transfo rm: translateY(-8px);
-    }
-  }
-
   --animate-card-hover: cardLift 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-marquee: marquee 25s linear infinite;
 }
 
 @layer utilities {
-  
   .no-scrollbar::-webkit-scrollbar {
     display: none;
   }
-  
+
   .no-scrollbar {
-    -ms-overflow-style: none;  
-    scrollbar-width: none;  
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 }
 
